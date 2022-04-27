@@ -2,6 +2,7 @@ import React from 'react'
 import Galeria from './galeria'
 import Layout from './layout'
 import { useLocation } from 'react-router-dom'
+import Nosotros from './nosotros'
 
 const Inicio = () => {
   const location = useLocation();
@@ -11,27 +12,9 @@ const Inicio = () => {
   const splitLocation = pathname.split("/");
   console.log(splitLocation)
   return (
-      <>
- 
-        <Layout>
-    <main className="contenedor contenido-principal text-center">
-      <section className="conoce">
-      <h2><span>Conoce Mas</span>sobre nosotros</h2>
-      <p>Nuestro reconocimiento se basa en el sabor y la atención, de la cual dan fe nuestros clientes y visitantes, aun durante
-        la crisis de salubridad, nos adaptamos al cambio, respetando las leyes estipuladas de bioseguridad para el buen servicio
-      </p>
-      <p>Exclusividad en cada uno de nuestros productos, ingredientes de alta cálida, amplio espacio en nuestra cafeteria
-        para que puedas degustar con tus familiares y amigos, nuestro talento humano con la mejor disposición te brindara
-        una buena atención.
-      </p>        
-        </section>
-        <section className="iconos">
-          <ul className="listado-iconos">
-           
-          </ul>
-        </section>
-       
-    </main>
+      <> 
+    <Layout>
+    <Nosotros/>
     <Galeria/>
     <section className="nuestro-menu">
       <h2 className="heading-blanco"><span>Nuestro delicioso</span>Menú</h2>
@@ -115,7 +98,7 @@ const Inicio = () => {
         </div>
     </section>
     </Layout>
-    
+
     </>
   )
 }

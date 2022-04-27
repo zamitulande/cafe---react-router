@@ -1,14 +1,8 @@
 import React from 'react'
 import Layout from './layout'
-import { useLocation } from 'react-router-dom';
 
 const Proceso = () => {
-  const location = useLocation();
 
-  const {pathname} = location;
-
-  const splitLocation = pathname.split("/");
-  console.log(splitLocation)
   return (
     <>
    

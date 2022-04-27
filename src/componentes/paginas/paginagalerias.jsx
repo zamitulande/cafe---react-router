@@ -1,7 +1,7 @@
 import React from 'react'
 import img from '../../assets/img/galeria/galeria_01.jpg'
 
-const Galerias = () => {
+const PaginasGaleria = () => {
   return (
     <section className="experiencia">
     <h2><span>Vive la</span>experiencia</h2>
@@ -42,4 +42,4 @@ const Galerias = () => {
   )
 }
 
-export default Galerias
+export default PaginasGaleria

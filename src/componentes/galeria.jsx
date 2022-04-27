@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from './layout'
 import { useLocation } from 'react-router-dom'
-import Galerias from './galeria/galerias';
+import PaginasGaleria from './paginas/paginagalerias';
 
 const Galeria = () => {
   const location = useLocation();
@@ -10,7 +10,7 @@ const Galeria = () => {
   console.log(splitLocation)
   return (   
    <div>
-      {splitLocation[1] === "galeria" ?<Layout> <Galerias/> </Layout>: <Galerias/>}
+      {splitLocation[1] === "galeria" ?<Layout> <PaginasGaleria/> </Layout>: <PaginasGaleria/>}
    </div>
   )
 }
