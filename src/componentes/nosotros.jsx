@@ -1,9 +1,17 @@
 import React from 'react'
 import Layout from './layout'
+import { useLocation } from 'react-router-dom';
 
 const Nosotros = () => {
+  const location = useLocation();
+
+  const {pathname} = location;
+
+  const splitLocation = pathname.split("/");
+  console.log(splitLocation)
   return (
     <>
+    
      <Layout>
    
     <main className="contenedor contenido-principal">
@@ -25,6 +33,7 @@ const Nosotros = () => {
     
 
     </Layout>
+
     </>
     
   )

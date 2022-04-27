@@ -1,13 +1,19 @@
 import React from 'react'
 import Galeria from './galeria'
-import Header from './header'
 import Layout from './layout'
+import { useLocation } from 'react-router-dom'
 
 const Inicio = () => {
+  const location = useLocation();
+
+  const {pathname} = location;
+
+  const splitLocation = pathname.split("/");
+  console.log(splitLocation)
   return (
       <>
-
-        <Header/>
+ 
+        <Layout>
     <main className="contenedor contenido-principal text-center">
       <section className="conoce">
       <h2><span>Conoce Mas</span>sobre nosotros</h2>
@@ -26,6 +32,7 @@ const Inicio = () => {
         </section>
        
     </main>
+    <Galeria/>
     <section className="nuestro-menu">
       <h2 className="heading-blanco"><span>Nuestro delicioso</span>Menú</h2>
       <div className="contenedor grid-menu">
@@ -107,8 +114,8 @@ const Inicio = () => {
             <p className="autor">- Zami Tulande</p>
         </div>
     </section>
-   
-
+    </Layout>
+    
     </>
   )
 }

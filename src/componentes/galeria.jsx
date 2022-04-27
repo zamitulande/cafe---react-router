@@ -1,54 +1,17 @@
 import React from 'react'
 import Layout from './layout'
+import { useLocation } from 'react-router-dom'
+import Galerias from './galeria/galerias';
 
 const Galeria = () => {
-  return (
-    <>
-    <Layout>
-
-        
-        <section className="experiencia">
-          <h2><span>Vive la</span>experiencia</h2>
-          <div className="galeria">
-            <div className="imagen">
-              
-          </div>
-          <div className="imagen">
-           
-              
-          </div>
-          <div className="imagen">
-            
-          </div>
-          <div className="imagen">
-            
-          </div>
-          <div className="imagen">
-            
-          </div>
-          <div className="imagen">
-            
-          </div>
-          <div className="imagen">
-            
-          </div>
-          <div className="imagen">
-            
-          </div>
-          <div className="imagen">
-            
-          </div>
-          <div className="imagen">
-                 
-            </div>            
-          </div>
-        </section>
-   
-        
-  
-    </Layout>
-    </>
+  const location = useLocation();
+  const {pathname} = location;
+  const splitLocation = pathname.split("/");
+  console.log(splitLocation)
+  return (   
+   <div>
+      {splitLocation[1] === "galeria" ?<Layout> <Galerias/> </Layout>: <Galerias/>}
+   </div>
   )
 }
-
 export default Galeria
