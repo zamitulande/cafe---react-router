@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useLocation} from 'react-router-dom'
 import Logo from '../assets/img/martin.png'
+import BarraNav from './barranav';
 
 const Header = () => {
   const location = useLocation();
@@ -16,13 +17,7 @@ const Header = () => {
           <div className="logo">
                 <img src={Logo} alt="logo" />
           </div>
-          <nav className="nav-principal">
-            <Link to="/">Inicio</Link>
-            <Link to="/nosotros">Nosotros</Link> 
-            <Link to="/proceso">Proceso</Link> 
-            <Link to="/galeria">Galería</Link>
-            <Link to="/menu">Menú</Link>         
-          </nav>
+          <BarraNav/>
         </div>
         <div className="texto-header">
         {splitLocation[1] === "galeria" ?<h1>Los ojos también pueden degustar</h1>: "" || splitLocation[1] === "nosotros" ?<h1>muchas historias, pero aquí la nuestra</h1>: "" || splitLocation[1] === "proceso" ?<h1>vamos, aprendamos juntos</h1>: "" || splitLocation[1] === "" ?<h1>para un inicio, una buena taza de café</h1>: "" || splitLocation[1] === "menu" ?<h1>que sabores y olores vas a combinar?</h1>: ""   }
