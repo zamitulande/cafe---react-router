@@ -551,21 +551,20 @@
   
   .header-proceso {
     background-image: url("./assets/img/header_proceso.jpg");
-    
+    background-repeat: no-repeat;
+    max-height: 70rem;
   }
 
   
  .header-menu {
-    background-image: url("../img/header_menu.jpg");
+    background-image: url("./assets/img/header_menu.jpg");
+    background-repeat: no-repeat;
+    max-height: 70rem;
   }
   
    .header-galeria {
     background-image: url("./assets/img/header_galeria.jpg");
   
-  }
-  
-  .header-contacto {
-    background-image: url("../img/header_contacto.jpg");
   }
   
   .nav-principal {

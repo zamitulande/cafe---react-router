@@ -7,7 +7,6 @@ const Galeria = () => {
   const location = useLocation();
   const {pathname} = location;
   const splitLocation = pathname.split("/");
-  console.log(splitLocation)
   return (   
    <div>
       {splitLocation[1] === "galeria" ?<Layout> <PaginasGaleria/> </Layout>: <PaginasGaleria/>}
