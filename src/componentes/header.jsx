@@ -25,7 +25,7 @@ const Header = () => {
           </nav>
         </div>
         <div className="texto-header">
-        {splitLocation[1] === "galeria" ?<h1>desde galeria</h1>: "" || splitLocation[1] === "nosotros" ?<h1>desde nosotros</h1>: "" || splitLocation[1] === "proceso" ?<h1>desde proceso</h1>: "" || splitLocation[1] === "" ?<h1>desde inicio</h1>: "" || splitLocation[1] === "menu" ?<h1>desde menu</h1>: ""   }
+        {splitLocation[1] === "galeria" ?<h1>Los ojos tambien pueden degustar</h1>: "" || splitLocation[1] === "nosotros" ?<h1>muchas historias, pero aqui la nuestra</h1>: "" || splitLocation[1] === "proceso" ?<h1>vamos a aprender juntos</h1>: "" || splitLocation[1] === "" ?<h1>para un inicio, una buena taza de cafe</h1>: "" || splitLocation[1] === "menu" ?<h1>que sabores y olores vas a combinar?</h1>: ""   }
         </div>
       </div>
     </header>

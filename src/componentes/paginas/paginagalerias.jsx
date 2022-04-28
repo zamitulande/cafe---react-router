@@ -13,7 +13,6 @@ import img10 from '../../assets/img/galeria/galeria_10.jpg'
 const PaginasGaleria = () => {
   return (
     <section className="experiencia">
-    <h2><span>Vive la</span>experiencia</h2>
     <div className="contenedor galeria">
       <div className="imagen">
         <img src={img1} alt="imagen" />
