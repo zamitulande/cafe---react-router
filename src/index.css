@@ -429,7 +429,7 @@
     color: #000000;
     font-size: 1.6rem;
     line-height: 2;
-    text-align: center;
+    
   }
   
   .contenedor {
@@ -461,6 +461,7 @@
     text-transform: uppercase;
     text-align: center;
     line-height: 1.5;
+    letter-spacing: 3px;
   }
   
   h1 {
@@ -671,6 +672,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    margin-top: 3rem;
   }
   @media (min-width: 1024px) {
     .galeria {

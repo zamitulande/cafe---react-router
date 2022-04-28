@@ -20,12 +20,12 @@ const Header = () => {
             <Link to="/">Inicio</Link>
             <Link to="/nosotros">Nosotros</Link> 
             <Link to="/proceso">Proceso</Link> 
-            <Link to="/galeria">Galeria</Link>
+            <Link to="/galeria">Galería</Link>
             <Link to="/menu">Menú</Link>         
           </nav>
         </div>
         <div className="texto-header">
-        {splitLocation[1] === "galeria" ?<h1>Los ojos tambien pueden degustar</h1>: "" || splitLocation[1] === "nosotros" ?<h1>muchas historias, pero aqui la nuestra</h1>: "" || splitLocation[1] === "proceso" ?<h1>vamos a aprender juntos</h1>: "" || splitLocation[1] === "" ?<h1>para un inicio, una buena taza de cafe</h1>: "" || splitLocation[1] === "menu" ?<h1>que sabores y olores vas a combinar?</h1>: ""   }
+        {splitLocation[1] === "galeria" ?<h1>Los ojos también pueden degustar</h1>: "" || splitLocation[1] === "nosotros" ?<h1>muchas historias, pero aquí la nuestra</h1>: "" || splitLocation[1] === "proceso" ?<h1>vamos, aprendamos juntos</h1>: "" || splitLocation[1] === "" ?<h1>para un inicio, una buena taza de café</h1>: "" || splitLocation[1] === "menu" ?<h1>que sabores y olores vas a combinar?</h1>: ""   }
         </div>
       </div>
     </header>

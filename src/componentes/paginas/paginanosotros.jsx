@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Cafe from '../../assets/img/icono_cafe.svg'
 import Postre from '../../assets/img/icono_postre.svg'
 import Te from '../../assets/img/icono_te.svg'
+import Sidebar from '../../assets/img/nosotros_sidebar.jpg'
 
 const PaginaNosotros = () => {
     const location = useLocation();
@@ -13,6 +14,7 @@ const PaginaNosotros = () => {
       <h2><span>Conoce Mas</span>sobre nosotros</h2>
       <div className={splitLocation[1] === "nosotros" ? "contenido-nosotros" : "contenido-centrar"}>
         <div className={splitLocation[1] === "nosotros" ? "imagen" : ""}>
+          {splitLocation[1] === "nosotros" ? <img src={Sidebar} alt='imagen'/> : "" }
         </div>
         <div className='texto'>
         <p>Nuestro reconocimiento se basa en el sabor y la atención, de la cual dan fe nuestros clientes y visitantes, aun durante
@@ -27,19 +29,18 @@ const PaginaNosotros = () => {
           <ul className="listado-iconos">
             <li className="vaso">
               <img src={Cafe} alt="iconocafe"/>
-              <p>Cafe</p>
+              <p className='text-center'>Cafe</p>
             </li >
             <li className="pan">
               <img src={Postre} alt="icono cafe"/>
-              <p>Postres</p>
+              <p className='text-center'>Postres</p>
             </li>
             <li className="posillo">
               <img src={Te} alt="icono cafe"/>
-              <p>Te</p>
+              <p className='text-center'>Te</p>
             </li>
           </ul>
-        </section>}
-        
+        </section>}        
       </div>
     </main>
   )
